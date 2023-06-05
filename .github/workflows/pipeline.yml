@@ -45,7 +45,7 @@ jobs:
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
   tag_release:
-    needs: [deploy, simple_deployment_pipeline]
+    needs: [simple_deployment_pipeline, deploy]
     runs-on: ubuntu-20.04
     if: ${{ github.event_name == 'push' }}
     permissions:
