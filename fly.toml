@@ -1,0 +1,16 @@
+# fly.toml app configuration file generated for ci-cd-pipeline on 2023-06-05T15:15:55+08:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "ci-cd-pipeline"
+primary_region = "hkg"
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
