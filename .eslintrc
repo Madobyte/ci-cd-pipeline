@@ -28,5 +28,5 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "ignorePatterns": ["webpack.config.ts"]
+  "ignorePatterns": ["client/*", "webpack.config.ts"]
 }
