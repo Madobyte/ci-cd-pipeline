@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
+      - name: Install client dependencies
+        run: npm install --prefix client
       - name: Install server dependencies
         run: npm install
       - name: Check style
