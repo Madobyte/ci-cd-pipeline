@@ -1,6 +1,7 @@
 describe('Patient List Page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:8080')
+    cy.contains('Patientor')
     cy.contains('John McClane').click()
   })
 
